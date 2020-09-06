@@ -1,4 +1,21 @@
 # PanPals - Clustering Patients Into Support Groups
+## Usage
+### Download Requirements
+
+```pip install requirements```
+
+### Download the dataset
+
+Download dataset from `https://storage.googleapis.com/synthea-public/10k_synthea_covid19_csv.zip`
+
+### Run the Notebooks
+
+1. `data-parsing.ipynb`
+2. `encoding.ipynb`
+3. `clustering.ipynb`
+
+## Explaination
+
 ## Creating Patient Groups with Unsupervised Learning 
 ### Data Exploration
 In the context of our chosen track, we decided to focus on patients that tested COVID-19 Postive. Hence we chose the Sytheia COVID-19 Specialized dataset from https://synthea.mitre.org/. 
