@@ -34,8 +34,8 @@ Encoding becomes challenging when your data is modeled for a relation database. 
 ### Heuristics - Ranking Conditions
 -- To Be Comlpeted -- 
 
-## Creating Clusters - Unsupervised K-Mean/K-Mediod
-Once we had the data encoded, we decided to employ K means algorithm to create clusters of 50. We reasonsed that K means would do fairly well since it relies on the principle that the "cluster center" (the arithmetic mean of all the points belonging to the cluster) is closer to its own cluster center than to other cluster centers.
+## Creating Clusters - Unsupervised K-Mean / Spectral Clustering
+Once we had the data encoded, we decided to employ K means and Spectral clustering algorithms to create clusters of 50. We reasonsed that these algorithms would do fairly well since it relies on the principle that the "cluster center" (the arithmetic mean of all the points belonging to the cluster) is closer to its own cluster center than to other cluster centers. We found that spectral clustering gave a better and more relevant grouping.
 
 ![3D Plot of K-Means Cluster for Patient Groups](3d_plot.png)
 
