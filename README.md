@@ -23,7 +23,7 @@ Download dataset from `https://storage.googleapis.com/synthea-public/10k_synthea
 ### Data Exploration
 In the context of our chosen track, we decided to focus on patients that tested COVID-19 Postive. Hence we chose the Sytheia COVID-19 Specialized dataset from https://synthea.mitre.org/. 
 
-The dataset consisted of synthetic patient details, medication records, prior and current health conditions, health coverage, medical bills and various medical observations. Pretty much everything a standard EMR would have record of. Hence, we felt it was a good starting point for building a scalable and interoperability with many providers. 
+The dataset consisted of synthetic patient details, medication records, prior and current health conditions, health coverage, medical bills and various medical observations. Pretty much everything a standard EMR would have a record of. Hence, we felt it was a good starting point for building a scalable system and ensure interoperability with many providers. 
 
 For building an unsupervised clustering algorithm that doesn't overfit and sets the ground for future work, we decided to focus on key data points: **patient details, exisiting conditions and medical observations/vitals**.
 
@@ -32,7 +32,7 @@ Encoding becomes challenging when your data is modeled for a relation database. 
 
 ### Encoding Categorical Data
 - Categorical data like ethinicity, condition groups and hierarchical conditions were all encoded using binary/one hot encoding.
-- Majority of the Numerical data was just scaled using standard scaling to avoid any   
+- Majority of the Numerical data was just scaled using standard scaling to avoid any issues when training our model  
 
 ### Heuristics - Ranking Medical Conditions
 The healthcare students on our team decided it was best if patients with not only similar conditions are grouped together but also people with highest risk factor to COVID-19 are grouped together. To provide this metric, they identified all conditions and graded them based on severity. This helped our clustering algorithm a valuable data point that it would not have been able to identify.  
