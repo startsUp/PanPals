@@ -1,4 +1,10 @@
-# PanPals - Clustering Patients Into Support Groups
+# PanPal - Supporting Patients by connecting them to the right community.
+🏆 2nd Place for Best Use of Google Cloud at [MedHacks](https://medhacks2020.devpost.com/), the largest healthcare focused hackathon in the U.S. with 1000+ participants.
+
+PanPal (short for PandemicPal and adapted from the word “penpal”) allows COVID-19 positive patients to adhere to their care by connecting with other infected patients with similar underlying conditions. These connections will be in the form of support groups, which are automatically determined by a machine learning algorithm that is deployed on Google Cloud AI Engine.
+
+To learn more, checkout our devpost: [PanPal](https://devpost.com/software/panpal-9nbzmi) 
+
 ## Usage
 ### Prerequisites
 - `python 3.7+`
@@ -19,7 +25,7 @@ Download dataset from `https://storage.googleapis.com/synthea-public/10k_synthea
 
 ## Explaination
 
-## Creating Patient Groups with Unsupervised Learning 
+# Creating Patient Groups with Unsupervised Learning 
 ### Data Exploration
 In the context of our chosen track, we decided to focus on patients that tested COVID-19 Postive. Hence we chose the Sytheia COVID-19 Specialized dataset from https://synthea.mitre.org/. 
 
